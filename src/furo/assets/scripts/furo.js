@@ -1,4 +1,6 @@
 import Gumshoe from "./gumshoe-patched.js";
+import "./footer";
+import "./header";
 
 ////////////////////////////////////////////////////////////////////////////////
 // Scroll Handling
