@@ -7,6 +7,7 @@
   import { createColorTokens } from "../../www.unum.cloud/src/tokens/color";
   import { createRadiusTokens } from "../../www.unum.cloud/src/tokens/radius";
   import { createSpacingTokens } from "../../www.unum.cloud/src/tokens/spacing";
+  import { LINKS } from "./links";
 
   if (typeof document != "undefined") {
     const root = document.querySelector(":root");
@@ -22,7 +23,7 @@
 
 <Router>
   <header>
-    <Nav />
+    <Nav links={LINKS} />
   </header>
 </Router>
 

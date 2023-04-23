@@ -2,6 +2,7 @@
   import { Router } from "svelte-navigator";
 
   import Footer from "../../www.unum.cloud/src/components/Footer/Footer.svelte";
+  import { LINKS } from "../../header/src/links";
 
   import { applyTokens } from "../../www.unum.cloud/src/tokens/apply-tokens";
   import { createColorTokens } from "../../www.unum.cloud/src/tokens/color";
@@ -22,7 +23,7 @@
 
 <Router>
   <footer>
-    <Footer />
+    <Footer links={LINKS} />
   </footer>
 </Router>
 
@@ -136,13 +137,5 @@
     :root {
       --body-margin-side: 10rem;
     }
-  }
-
-  header {
-    position: sticky;
-    z-index: 1;
-    top: 0;
-
-    background: var(--color-pureBlack);
   }
 </style>
