@@ -187,7 +187,7 @@ def _html_page_context(
     if "scripts" in context:
         _add_asset_hashes(
             context["scripts"],
-            ["scripts/furo.js"],
+            ["scripts/furo.js", "scripts/header.j"],
         )
 
     # Basic constants
