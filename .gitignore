@@ -6,10 +6,6 @@ node_modules
 www.unum.cloud
 footer/dist
 header/dist
-src/furo/assets/scripts/footer.js
-src/furo/assets/scripts/header.js
-src/furo/assets/styles/footer.css
-src/furo/assets/styles/header.css
 
 
 # Python stuff
