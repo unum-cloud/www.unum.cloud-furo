@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "preinstall": "rm -rf www.unum.cloud && git clone https://github.com/unum-cloud/www.unum.cloud.git",
+    "preinstall": "rm -rf www.unum.cloud && git clone http://github.com/unum-cloud/www.unum.cloud",
     "build:footer": "cd footer && npm run build && mv ./dist/**/*.js ../src/furo/assets/scripts/footer.js && mv ./dist/**/*.css ../src/furo/assets/styles/footer.css",
     "build:header": "cd header && npm run build && mv ./dist/**/*.js ../src/furo/assets/scripts/header.js && mv ./dist/**/*.css ../src/furo/assets/styles/header.css",
     "build": "npm run build:footer && npm run build:header && webpack "
