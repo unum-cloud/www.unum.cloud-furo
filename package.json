@@ -1,9 +1,10 @@
 {
   "scripts": {
+    "clone": "rm -rf www.unum.cloud && git clone http://github.com/unum-cloud/www.unum.cloud",
     "build:footer": "cd footer && npm run build && mv ./dist/**/*.js ../src/furo/assets/scripts/footer.js && mv ./dist/**/*.css ../src/furo/assets/styles/footer.css",
     "build:header": "cd header && npm run build && mv ./dist/**/*.js ../src/furo/assets/scripts/header.js && mv ./dist/**/*.css ../src/furo/assets/styles/header.css",
-    "prebuild": "rm -rf www.unum.cloud && git clone http://github.com/unum-cloud/www.unum.cloud",
-    "build": "npm run build:footer && npm run build:header && webpack "
+    "assets": "npm run clone && npm run build:footer && npm run build:header",
+    "build": "webpack"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
